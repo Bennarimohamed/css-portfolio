@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto ;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: #0a192f;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 20%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: #64ffda;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: #0a192f;
+    background-color: #00a980;
+
+}
+body 
+{
+
+	background-color: #0a192f; 
+}
+p , label 
+{
+	color: white;
+}
+
+body main h1
+{
+	color: #64ffda;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+img{
+    width:140px;
+    height:140px;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 150px;
+}
+
+hr
+{
+	opacity: 70%;
+	color: #64ffda;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+main section a
+{
+    display: inline-block;
+}    
